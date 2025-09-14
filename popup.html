@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 350px;
+      min-height: 200px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      border-radius: 16px;
+      overflow: hidden;
+      background: white;
+    }
+
+    body {
+      padding: 16px;
+      box-sizing: border-box;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: bold;
+      color: #2196F3;
+    }
+
+    .status {
+      padding: 12px;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    .status.analyzing {
+      background-color: #fff3cd;
+      color: #856404;
+      border: 1px solid #ffeaa7;
+    }
+
+    .status.verified {
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+
+    .status.questionable {
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+
+    .selected-text {
+      background-color: #f8f9fa;
+      padding: 12px;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      font-style: italic;
+      border-left: 3px solid #2196F3;
+    }
+
+    .instructions {
+      color: #666;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .btn {
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 12px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 14px;
+    }
+
+    .btn:hover {
+      background-color: #1976D2;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">🔍 Factify</div>
+  </div>
+
+  <div id="content">
+    <div class="instructions">
+      Select text on any webpage and click "Fact Check" to analyze it for accuracy.
+    </div>
+
+    <button id="checkSelectedText" class="btn">Check Selected Text</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>

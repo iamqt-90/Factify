@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Factify",
+  "version": "1.0.0",
+  "description": "AI-Powered Fact-Checking Browser Extension",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "contextMenus"
+  ],
+  "action": {
+    "default_title": "Factify - Fact Check"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
