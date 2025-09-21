@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Factify - AI-Powered Fact-Checking Extension</title>
-    <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/Factify_logo.jpg" type="image/jpeg">
     <style>
         * {
             margin: 0;
@@ -336,12 +337,13 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
         <nav class="nav container">
             <div class="logo">
-                <img src="assets/icon.svg" alt="Factify">
+                <img src="assets/Factify_logo.jpg" alt="Factify">
                 <span>Factify</span>
             </div>
             <ul class="nav-links">
@@ -357,7 +359,8 @@
     <section class="hero">
         <div class="container">
             <h1>🔍 Factify</h1>
-            <p>AI-powered fact-checking extension that helps you verify online information with detailed analysis and educational insights.</p>
+            <p>AI-powered fact-checking extension that helps you verify online information with detailed analysis and
+                educational insights.</p>
             <a href="#download" class="cta-button">Download Free Extension</a>
         </div>
     </section>
@@ -370,27 +373,32 @@
                 <div class="feature-card">
                     <div class="feature-icon">🎯</div>
                     <h3>Smart Text Selection</h3>
-                    <p>Simply select any text on any webpage and get instant fact-checking analysis with our intuitive interface.</p>
+                    <p>Simply select any text on any webpage and get instant fact-checking analysis with our intuitive
+                        interface.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🤖</div>
                     <h3>AI-Powered Analysis</h3>
-                    <p>Advanced algorithms provide comprehensive fact-checking with detailed explanations and source verification.</p>
+                    <p>Advanced algorithms provide comprehensive fact-checking with detailed explanations and source
+                        verification.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">📚</div>
                     <h3>Educational Insights</h3>
-                    <p>Learn how to verify similar claims yourself with practical tips and digital literacy guidance.</p>
+                    <p>Learn how to verify similar claims yourself with practical tips and digital literacy guidance.
+                    </p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🔗</div>
                     <h3>Trusted Sources</h3>
-                    <p>Get links to reputable fact-checking organizations and authoritative sources for verification.</p>
+                    <p>Get links to reputable fact-checking organizations and authoritative sources for verification.
+                    </p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🎨</div>
                     <h3>Beautiful Interface</h3>
-                    <p>Enjoy a draggable, responsive widget with smooth animations and typewriter-style text presentation.</p>
+                    <p>Enjoy a draggable, responsive widget with smooth animations and typewriter-style text
+                        presentation.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🔒</div>
@@ -505,19 +513,19 @@
         });
 
         // Download button functionality
-        document.getElementById('downloadBtn').addEventListener('click', function(e) {
+        document.getElementById('downloadBtn').addEventListener('click', function (e) {
             e.preventDefault();
-            
+
             // Create a temporary message
             const originalText = this.textContent;
             this.textContent = '🚀 Preparing download...';
             this.style.pointerEvents = 'none';
-            
+
             setTimeout(() => {
                 // In a real scenario, this would trigger the actual download
                 // For now, we'll show instructions
                 alert('To download Factify:\n\n1. Go to the GitHub repository\n2. Click "Code" → "Download ZIP"\n3. Follow the installation instructions below\n\nGitHub: https://github.com/yourusername/factify');
-                
+
                 this.textContent = originalText;
                 this.style.pointerEvents = 'auto';
             }, 1000);
@@ -547,4 +555,5 @@
         });
     </script>
 </body>
+
 </html>
